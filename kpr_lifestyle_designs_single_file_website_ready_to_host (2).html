@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KPR Lifestyle Designs | Design–Build Company</title>
+  <meta name="description" content="KPR Lifestyle Designs – Design & Build company for Residential and Commercial projects. 2D/3D Design, Structural, Plumbing, Electrical, BIM, Estimation, Licensed Survey, Construction & Interiors. Book our Doorstep Design Service." />
+
+  <!-- ====== BRAND COLORS (edit if needed) ====== -->
+  <style>
+    :root{
+      --navy:#132433;
+      --orange:#F39A31;
+      --green:#5DAA5D;
+      --ink:#25313b;
+      --muted:#6B7B88;
+      --paper:#F7F8FA;
+      --white:#ffffff;
+      --maxw:1200px;
+      --radius:18px;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;scroll-behavior:smooth}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:var(--maxw);margin-inline:auto;padding:0 20px}
+    .pill{border-radius:999px;padding:6px 12px;background:var(--paper);color:var(--navy);display:inline-flex;gap:8px;align-items:center;font-weight:600}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 20px;border-radius:12px;border:2px solid var(--navy);font-weight:700}
+    .btn.primary{background:var(--orange);border-color:var(--orange);color:#0d0d0d}
+    .btn.secondary{background:var(--white);color:var(--navy)}
+    .btn.whatsapp{background:var(--green);border-color:var(--green);color:#fff}
+    .btn:hover{transform:translateY(-1px)}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid #e9eef3}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand .logo{width:42px;height:42px;border-radius:10px;background:conic-gradient(from 180deg at 50% 50%, var(--orange) 0 25%, transparent 25 50%) ,
+                  radial-gradient(circle at 70% 40%, var(--green) 0 55%, transparent 56%);
+                  background-color:var(--navy);position:relative;overflow:hidden}
+    .brand h1{font-size:18px;line-height:1;margin:0;color:var(--navy)}
+    .brand small{display:block;font-size:11px;color:var(--muted);font-weight:600}
+    .menu{display:flex;flex-wrap:wrap;gap:12px}
+    .menu a{padding:10px 12px;border-radius:10px;color:var(--navy);font-weight:600}
+    .menu a:hover{background:var(--paper)}
+    .hero{padding:56px 0;background:linear-gradient(180deg,#ffffff 0,#f9fbfd 100%)}
+    .hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center}
+    .hero h2{font-size:40px;line-height:1.1;margin:10px 0 12px;color:var(--navy)}
+    .hero p{color:var(--muted);font-size:18px}
+    .hero .card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+    section{padding:56px 0}
+    section h3{font-size:28px;color:var(--navy);margin:0 0 8px}
+    section p.lead{color:var(--muted);margin:0 0 24px}
+    .grid{display:grid;gap:16px}
+    .services{grid-template-columns:repeat(3,1fr)}
+    .svc{background:var(--paper);border-radius:16px;padding:18px;border:1px solid #e6ecf2}
+    .svc h4{margin:8px 0 6px;color:var(--navy)}
+    .svc p{margin:0;color:#53606e}
+    .portfolio{grid-template-columns:repeat(3,1fr)}
+    .tile{position:relative;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);cursor:zoom-in}
+    .tile img{width:100%;height:220px;object-fit:cover}
+    .cards{grid-template-columns:repeat(3,1fr)}
+    .card{background:var(--white);border:1px solid #e6ecf2;border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+    form{display:grid;gap:12px}
+    input,textarea,select{padding:14px 12px;border-radius:12px;border:1px solid #d5dee7;font:inherit;background:#fff}
+    label{font-weight:700;color:var(--navy)}
+    .cta{background:linear-gradient(90deg,var(--navy),#0f334e);color:#fff;border-radius:20px;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    footer{background:var(--navy);color:#d8e2ea;padding:36px 0;margin-top:40px}
+    footer a{color:#fff;opacity:.95}
+    .footgrid{display:grid;gap:24px;grid-template-columns:2fr 1fr 1fr}
+    @media (max-width:980px){
+      .hero .wrap{grid-template-columns:1fr}
+      .services,.portfolio,.cards,.footgrid{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:640px){
+      .menu{display:none}
+      .services,.portfolio,.cards,.footgrid{grid-template-columns:1fr}
+      .hero h2{font-size:32px}
+      .cta{flex-direction:column;align-items:flex-start}
+    }
+    .float-wa{position:fixed;right:18px;bottom:18px;z-index:60}
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "KPR Lifestyle Designs",
+      "description": "Design & Build – 2D/3D, Structural, Plumbing, Electrical, BIM, Estimation, Licensed Survey, Construction & Interiors.",
+      "areaServed": "India",
+      "url": "https://example.com",
+      "telephone": "+91-81249-25882"
+    }
+  </script>
+</head>
+<body>
+  <!-- ====== Header / Nav ====== -->
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="#home" aria-label="KPR Lifestyle Designs Home">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            <h1>KPR Lifestyle Designs</h1>
+            <small>Spaces That Reflect You</small>
+          </div>
+        </a>
+        <div class="menu">
+          <a href="#services">Services</a>
+          <a href="#portfolio">Projects</a>
+          <a href="#booking">Book Doorstep</a>
+          <a href="#contact">Contact</a>
+          <a class="btn secondary" href="tel:+918124925882">Call Now</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== Hero ====== -->
+  <section id="home" class="hero">
+    <div class="container wrap">
+      <div>
+        <span class="pill">Design + Build • Residential & Commercial</span>
+        <h2>From concept to keys — we design, engineer and build spaces that reflect <em>you</em>.</h2>
+        <p>2D/3D Design • Structural • Plumbing • Electrical • BIM • Estimation • Licensed Survey • Construction • Interiors.</p>
+        <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
+          <a href="#booking" class="btn primary">Book Doorstep Design</a>
+          <a href="#services" class="btn secondary">Explore Services</a>
+          <a target="_blank" rel="noopener" class="btn whatsapp" href="https://wa.me/918124925882?text=Hi%20KPR%2C%20I%20want%20to%20discuss%20a%20project">WhatsApp Us</a>
+        </div>
+        <p style="margin-top:12px;font-size:13px;color:var(--muted)">Free design when you award construction • Transparent estimation • On‑time delivery</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1200&auto=format&fit=crop" alt="Modern interior and architectural design"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Services ====== -->
+  <section id="services">
+    <div class="container">
+      <h3>Our Services</h3>
+      <p class="lead">End‑to‑end Design & Build under one roof. Expert engineers, licensed surveyors and interior specialists.</p>
+      <div class="grid services">
+        <div class="svc"><h4>2D Architectural Design</h4><p>Plans, elevations & working drawings aligned to bye‑laws.</p></div>
+        <div class="svc"><h4>3D & Walkthrough</h4><p>Photo‑realistic renders and walkthroughs for clear decisions.</p></div>
+        <div class="svc"><h4>Structural Design</h4><p>Safe, economical RCC/steel design and detailing.</p></div>
+        <div class="svc"><h4>Plumbing Design</h4><p>Water supply, drainage & rainwater systems with drawings.</p></div>
+        <div class="svc"><h4>Electrical Design</h4><p>Load calculations, wiring layouts & panel schedules.</p></div>
+        <div class="svc"><h4>BIM (Revit)</h4><p>Clash‑free coordinated models for faster execution.</p></div>
+        <div class="svc"><h4>Cost Estimation</h4><p>BOQs, rate analysis and transparent proposals.</p></div>
+        <div class="svc"><h4>Licensed Survey</h4><p>Total station/DRONE survey, layout & site verification.</p></div>
+        <div class="svc"><h4>Construction & Interiors</h4><p>Residential & commercial turnkey execution with QC.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Portfolio ====== -->
+  <section id="portfolio" style="background:var(--paper)">
+    <div class="container">
+      <h3>Featured Projects</h3>
+      <p class="lead">A glimpse of our recent residential and commercial work.</p>
+      <div class="grid portfolio">
+        <a class="tile" href="#" onclick="openLightbox(this.querySelector('img').src);return false;">
+          <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop" alt="Contemporary living room"/>
+        </a>
+        <a class="tile" href="#" onclick="openLightbox(this.querySelector('img').src);return false;">
+          <img src="https://images.unsplash.com/photo-1521783593447-5702fcdacaa5?q=80&w=1200&auto=format&fit=crop" alt="Modern facade"/>
+        </a>
+        <a class="tile" href="#" onclick="openLightbox(this.querySelector('img').src);return false;">
+          <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1200&auto=format&fit=crop" alt="Office interior"/>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Why Choose Us ====== -->
+  <section>
+    <div class="container cards">
+      <div class="card"><h4>Single Point Accountability</h4><p>Design + Engineering + Build managed by one expert team.</p></div>
+      <div class="card"><h4>Transparent Pricing</h4><p>Detailed BOQ & schedule. No surprises, only milestones.</p></div>
+      <div class="card"><h4>On‑Time Delivery</h4><p>Planned execution with BIM coordination & site QC.</p></div>
+    </div>
+  </section>
+
+  <!-- ====== Booking Form ====== -->
+  <section id="booking">
+    <div class="container">
+      <h3>Book Doorstep Design Service</h3>
+      <p class="lead">We visit your site/home, understand requirements, and sketch concepts on the spot. Fill the form and confirm on WhatsApp.</p>
+      <div class="card">
+        <form id="bookForm">
+          <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
+            <div>
+              <label for="name">Full Name</label>
+              <input id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" placeholder="+91" required />
+            </div>
+            <div>
+              <label for="city">City / Area</label>
+              <input id="city" name="city" placeholder="Chennai, Tambaram …" required />
+            </div>
+            <div>
+              <label for="date">Preferred Date</label>
+              <input id="date" name="date" type="date" required />
+            </div>
+          </div>
+          <div>
+            <label for="address">Full Address</label>
+            <textarea id="address" name="address" rows="3" placeholder="Door no, street, landmark"></textarea>
+          </div>
+          <div>
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option>2D Design</option>
+              <option>3D Visualization</option>
+              <option>Structural Design</option>
+              <option>Plumbing Design</option>
+              <option>Electrical Design</option>
+              <option>BIM</option>
+              <option>Estimation</option>
+              <option>Licensed Survey</option>
+              <option>Construction</option>
+              <option>Interiors</option>
+            </select>
+          </div>
+          <div>
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Plot size, floors, style…"></textarea>
+          </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <button type="submit" class="btn whatsapp">Confirm on WhatsApp</button>
+            <a class="btn secondary" id="emailLink" href="#">Email Booking</a>
+          </div>
+          <small style="display:block;margin-top:8px;color:var(--muted)">No backend needed • Opens WhatsApp pre‑filled chat. Replace the phone number in the code comment.</small>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA Band ====== -->
+  <section class="container">
+    <div class="cta">
+      <div>
+        <h3>Ready to transform your space?</h3>
+        <p style="margin:8px 0 0;color:#fff;opacity:.92">Get in touch for a free consultation and transparent quotation.</p>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a href="#booking" class="btn primary">Book Now</a>
+        <a class="btn whatsapp" href="https://wa.me/918124925882?text=Hi%20KPR%2C%20I%20am%20interested%20in%20your%20design-build%20services">WhatsApp</a>
+        <a class="btn secondary" href="tel:+918124925882">Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Contact & Footer ====== -->
+  <footer id="contact">
+    <div class="container footgrid">
+      <div>
+        <h4 style="color:#fff;margin:0 0 10px">KPR Lifestyle Designs</h4>
+        <p style="margin:0 0 6px">Design + Build Company • Chennai, India</p>
+        <a href="mailto:kprlifestyledesigns@gmail.com">kprlifestyledesigns@gmail.com</a><br>
+        <a href="tel:+918124925882">+91 81249 25882</a>
+        <p style="margin:12px 0 0;font-size:13px">© 2025 KPR Lifestyle Designs. All rights reserved.</p>
+      </div>
+      <div>
+        <h4 style="color:#fff;margin:0 0 7px">Quick Links</h4>
+        <nav style="display:flex;flex-direction:column;gap:8px">
+          <a href="#services">Services</a>
+          <a href="#portfolio">Projects</a>
+          <a href="#booking">Book Doorstep</a>
+        </nav>
+      </div>
+      <div>
+        <h4 style="color:#fff;margin:0 0 7px">Follow Us</h4>
+        <nav style="display:flex;flex-direction:column;gap:8px">
+          <a target="_blank" rel="noopener" href="https://wa.me/918124925882">WhatsApp</a>
+          <a target="_blank" rel="noopener" href="mailto:kprlifestyledesigns@gmail.com">Email</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a class="float-wa btn whatsapp" target="_blank" rel="noopener" href="https://wa.me/918124925882?text=Hi%20KPR%2C%20I%20want%20to%20discuss%20a%20project">WhatsApp Us</a>
+
+  <!-- Lightbox for Portfolio images (simple JS) -->
+  <div id="lightbox" style="display:none;position:fixed;z-index:99;top:0;left:0;width:100vw;height:100vh;background:rgba(30,34,44,0.95);align-items:center;justify-content:center">
+    <img id="lightboxImg" src="" alt="" style="max-width:88vw;max-height:88vh;border-radius:18px;box-shadow:0 12px 36px rgba(0,0,0,0.22)">
+  </div>
+  <script>
+    function openLightbox(src){
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+    document.getElementById('lightbox').onclick = function(){
+      this.style.display = 'none';
+      document.getElementById('lightboxImg').src = '';
+    };
+
+    // WhatsApp booking form handler
+    document.getElementById('bookForm').onsubmit = function(e){
+      e.preventDefault();
+      var name = encodeURIComponent(this.name.value);
+      var phone = encodeURIComponent(this.phone.value);
+      var city = encodeURIComponent(this.city.value);
+      var date = encodeURIComponent(this.date.value);
+      var address = encodeURIComponent(this.address.value);
+      var service = encodeURIComponent(this.service.value);
+      var notes = encodeURIComponent(this.notes.value);
+
+      var msg = `Booking Request:%0AName: ${name}%0APhone: ${phone}%0ACity: ${city}%0ADate: ${date}%0AService: ${service}%0AAddress: ${address}%0ANotes: ${notes}`;
+      var wa_url = "https://wa.me/918124925882?text="+msg; // Replace with your WhatsApp number
+      window.open(wa_url,"_blank");
+    };
+
+    // Email booking link
+    document.getElementById('emailLink').onclick = function(e){
+      e.preventDefault();
+      var form = document.getElementById('bookForm');
+      var name = encodeURIComponent(form.name.value);
+      var phone = encodeURIComponent(form.phone.value);
+      var city = encodeURIComponent(form.city.value);
+      var date = encodeURIComponent(form.date.value);
+      var address = encodeURIComponent(form.address.value);
+      var service = encodeURIComponent(form.service.value);
+      var notes = encodeURIComponent(form.notes.value);
+      var subject = "Doorstep Design Booking";
+      var body = `Booking Request:\nName: ${form.name.value}\nPhone: ${form.phone.value}\nCity: ${form.city.value}\nDate: ${form.date.value}\nService: ${form.service.value}\nAddress: ${form.address.value}\nNotes: ${form.notes.value}`;
+      var mailto_link = `mailto:kprlifestyledesigns@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.open(mailto_link,"_blank");
+    };
+  </script>
+</body>
+</html>
